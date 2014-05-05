@@ -1,0 +1,173 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RgbLed-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "5 may 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L POT RV?
+U 1 1 5367E976
+P 5100 2500
+F 0 "RV?" H 5100 2400 50  0000 C CNN
+F 1 "POT" H 5100 2500 50  0000 C CNN
+F 2 "~" H 5100 2500 60  0000 C CNN
+F 3 "~" H 5100 2500 60  0000 C CNN
+	1    5100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 5367E98F
+P 5100 2800
+F 0 "RV?" H 5100 2700 50  0000 C CNN
+F 1 "POT" H 5100 2800 50  0000 C CNN
+F 2 "~" H 5100 2800 60  0000 C CNN
+F 3 "~" H 5100 2800 60  0000 C CNN
+	1    5100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 5367E99E
+P 5100 2200
+F 0 "RV?" H 5100 2100 50  0000 C CNN
+F 1 "POT" H 5100 2200 50  0000 C CNN
+F 2 "~" H 5100 2200 60  0000 C CNN
+F 3 "~" H 5100 2200 60  0000 C CNN
+	1    5100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 5367EA16
+P 5700 2200
+F 0 "D?" H 5700 2300 50  0000 C CNN
+F 1 "LED" H 5700 2100 50  0000 C CNN
+F 2 "~" H 5700 2200 60  0000 C CNN
+F 3 "~" H 5700 2200 60  0000 C CNN
+	1    5700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 5367EA25
+P 5700 2500
+F 0 "D?" H 5700 2600 50  0000 C CNN
+F 1 "LED" H 5700 2400 50  0000 C CNN
+F 2 "~" H 5700 2500 60  0000 C CNN
+F 3 "~" H 5700 2500 60  0000 C CNN
+	1    5700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 5367EA34
+P 5700 2800
+F 0 "D?" H 5700 2900 50  0000 C CNN
+F 1 "LED" H 5700 2700 50  0000 C CNN
+F 2 "~" H 5700 2800 60  0000 C CNN
+F 3 "~" H 5700 2800 60  0000 C CNN
+	1    5700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5367ED4E
+P 6050 2950
+F 0 "#PWR?" H 6050 2950 30  0001 C CNN
+F 1 "GND" H 6050 2880 30  0001 C CNN
+F 2 "" H 6050 2950 60  0000 C CNN
+F 3 "" H 6050 2950 60  0000 C CNN
+	1    6050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2200 6050 2200
+Wire Wire Line
+	6050 2200 6050 2950
+Wire Wire Line
+	5900 2800 6050 2800
+Connection ~ 6050 2800
+Wire Wire Line
+	5900 2500 6050 2500
+Connection ~ 6050 2500
+Wire Wire Line
+	5350 2200 5500 2200
+Wire Wire Line
+	5350 2500 5500 2500
+Wire Wire Line
+	5350 2800 5500 2800
+Wire Wire Line
+	5100 2050 4850 2050
+Wire Wire Line
+	4850 2050 4850 2200
+Wire Wire Line
+	5100 2350 4850 2350
+Wire Wire Line
+	4850 2350 4850 2500
+Wire Wire Line
+	5100 2650 4850 2650
+Wire Wire Line
+	4850 2650 4850 2800
+$Comp
+L VDD #PWR?
+U 1 1 5367EDA4
+P 4450 2050
+F 0 "#PWR?" H 4450 2150 30  0001 C CNN
+F 1 "VDD" H 4450 2160 30  0000 C CNN
+F 2 "" H 4450 2050 60  0000 C CNN
+F 3 "" H 4450 2050 60  0000 C CNN
+	1    4450 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2050 4450 2800
+Wire Wire Line
+	4850 2200 4450 2200
+Wire Wire Line
+	4850 2500 4450 2500
+Connection ~ 4450 2200
+Wire Wire Line
+	4450 2800 4850 2800
+Connection ~ 4450 2500
+$EndSCHEMATC
