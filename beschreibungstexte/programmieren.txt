@@ -1,0 +1,34 @@
+Programmieren lernen mit Minecraft
+==================================
+
+Vielleicht hast du schon vom Computerspiel "Minecraft" (https://minecraft.net/)
+gehört. Wie du darin einen Block "von Hand" platzieren kannst, weisst du wohl
+bereits. Wie wärs aber mit 1000 Blöcken gleichzeitig?
+
+In diesem Kurs lernst du mit Minecraft spielerisch den Einstieg ins
+Programmieren. Ob du das Spiel bereits kennst oder nicht, ist egal. Dabei
+arbeiten wir mit dem kreditkarten-grossen Raspberry Pi Minicomputer
+(http://www.raspberrypi.org/). Das Beste daran? Am Schluss kannst du den
+Computer sogar mit heim nehmen und zuhause weiterexperimentieren!
+
+Der Kurs wird vom Verein Coredump (https://www.coredump.ch/der-verein/)
+durchgeführt. Die Raspberry Pis werden von der Hochschule für Technik
+gesponsert.
+
+Infos
+-----
+
+- Verpflegung: Nimm ein Zvieri und eine Trinkflasche mit
+- Begleitpersonen: keine Begleitperson(en) benötigt
+- Schulklasse: 6.--9. Klasse
+- Anzahl Teilnehmer: 4 Teilnehmer pro Durchführung
+- Kosten: 10 CHF
+
+Durchführungen
+--------------
+
+- 14. Oktober, 13:30--18:00
+- 17. Oktober, 13:30--18:00
+
+Treffpunkt / Kursadresse: Spinnereistrasse 2, 8640 Rapperswil
+Kursraum: Vorhanden
