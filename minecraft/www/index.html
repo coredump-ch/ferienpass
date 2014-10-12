@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://www.raspberrypi.org/documentation/usage/minecraft/README.md -->
+<html lang="en-GB"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Raspberry Pi Documentation</title>
+    <link rel="icon" type="image/png" href="http://www.raspberrypi.org/wp-content/themes/mind-control/images/favicon.png">
+    <link rel="publisher" href="https://plus.google.com/+RaspberryPi">
+    <!--[if lt IE 9]>
+    <script src="/wp-content/themes/mind-control/js/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="http://www.raspberrypi.org/wp-content/themes/mind-control/css/prism.css">
+    <link rel="stylesheet" href="http://www.raspberrypi.org/wp-content/themes/mind-control/style.css">
+    <link rel="stylesheet" href="http://www.raspberrypi.org/wp-content/themes/mind-control/mobile.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100italic,100,300italic,300,400italic,400,500italic,500,700italic,700,900italic,900">
+    <script type="text/javascript" async="" src="./tutorial/ga.js"></script><script src="./tutorial/jquery.min.js"></script><style type="text/css"></style>
+    <script src="./tutorial/jquery.main.js"></script>
+    <script src="./tutorial/prism.js"></script>
+
+    <script type="text/javascript">//<![CDATA[
+        // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-46270871-1']);
+			            _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+        //]]></script>
+
+    <link rel="canonical" href="http://www.raspberrypi.org/">
+    <link rel="shortlink" href="http://www.raspberrypi.org/">
+</head>
+
+<body class="documentation">
+    <div class="container">
+
+        <div class="main">
+
+<article class="entry-content">
+
+    <h1>Minecraft Pi</h1>
+    <p>Minecraft ist ein beliebtes Game, bei dem man in einer offenen Welt aus Blöcken alles mögliche bauen kann. Eine Gratisversion davon ist für den Raspberry Pi verfügbar. Im Gegensatz zur normalen Version ist es möglich, Minecraft Pi von aussen zu programmieren. Das heisst, dass du mit der Programmiersprache Python Befehle schreiben kannst, um z.B. automatisch ganze Gebäude zu bauen. Es ist eine super Möglichkeit um Python zu lernen.</p>
+
+<p><img alt="Minecraft Pi banner" src="./tutorial/minecraft-pi-banner.png"></p>
+<h2>Installation</h2>
+
+
+<p>Seit September 2014 ist Minecraft Pi auf allen Raspberry Pis vorinstalliert.</p>
+
+<p><img alt="Minecraft Pi desktop icon" src="./tutorial/minecraft-pi-shortcut.png"></p>
+
+<p>Falls du noch eine ältere Version nutzt, öffne ein Terminal-Fenster und tippe folgende Befehle ein (du musst dazu Internetzugang haben):</p>
+
+<pre class=" language-bash"><code class=" language-bash">sudo apt<span class="token operator">-</span>get update
+sudo apt<span class="token operator">-</span>get install minecraft<span class="token operator">-</span>pi</code></pre>
+<p>Sobald die Verarbeitung abgeschlossen ist, sollte Minecraft installiert sein.</p>
+
+<h2>Starten</h2>
+
+<p>Um Minecraft zu starten, doppelklicke auf das Desktopsymbol oder gib <code>minecraft-pi</code> in einem Terminal-Fenster ein.</p>
+
+<p><img alt="Minecraft Menu" src="./tutorial/mcpi-start.png"></p>
+
+<p>Sobald Minecraft Pi geöffnet ist, klicke auf <strong>Start Game</strong>
+<p>When Minecraft Pi has loaded, click on <strong>Start Game</strong>, followed by <strong>Create new</strong>. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.</p>
+
+<p><img alt="Minecraft Game" src="./tutorial/mcpi-game.png"></p>
+<p>You are now in a game of Minecraft! Go walk around, hack things, and build things!</p>
+<p>Use the mouse to look around and use the following keys on the keyboard:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="center">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">W</td>
+<td align="center">Forward</td>
+</tr>
+<tr>
+<td align="center">A</td>
+<td align="center">Left</td>
+</tr>
+<tr>
+<td align="center">S</td>
+<td align="center">Down</td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td align="center">Right</td>
+</tr>
+<tr>
+<td align="center">E</td>
+<td align="center">Inventory</td>
+</tr>
+<tr>
+<td align="center">Space</td>
+<td align="center">Jump</td>
+</tr>
+<tr>
+<td align="center">Double Space</td>
+<td align="center">Fly / Fall</td>
+</tr>
+<tr>
+<td align="center">Esc</td>
+<td align="center">Pause / Game menu</td>
+</tr>
+<tr>
+<td align="center">Tab</td>
+<td align="center">Release mouse cursor</td>
+</tr>
+</tbody>
+</table>
+<p>You can select an item from the quick draw panel with the mouse's scroll wheel (or use the numbers on your keyboard), or press <code>E</code> and select something from the inventory.</p>
+<p><img alt="Minecraft Inventory" src="./tutorial/mcpi-inventory.png"></p>
+<p>You can also double tap the space bar to fly in to the air. You'll stop flying when you release the space bar and if you double tap it again you'll fall back to the ground.</p>
+<p><img alt="Flying in Minecraft" src="./tutorial/mcpi-flying.png"></p>
+<p>With the sword in your hand you can click on blocks in front of you to remove them (or to dig) and with a block in your hand you can use right click to place that block in front of you, or left click to remove a block.</p>
+<h2>Programming interface</h2>
+<p>With Minecraft running, and the world created, bring your focus away from the game by pressing the <code>Tab</code> key, which will free your mouse. Open IDLE (not IDLE3) on the Desktop and move the windows so they're side-by-side.</p>
+<p>You can either type commands directly in to the Python window or create a file so you can save your code and run it again another time.</p>
+<p>If you want create a file go to <code>File &gt; New window</code> and <code>File &gt; Save</code>. You'll probably want to save this in your home folder or a new project folder.</p>
+<p>Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:</p>
+<pre class=" language-python"><code class=" language-python"><span class="token keyword">from</span> mcpi <span class="token keyword">import</span> minecraft
+
+mc <span class="token operator">=</span> minecraft<span class="token punctuation">.</span>Minecraft<span class="token punctuation">.</span>create<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+mc<span class="token punctuation">.</span>postToChat<span class="token punctuation">(</span><span class="token string">"Hello world"</span><span class="token punctuation">)</span></code></pre>
+<p>If you're entering commands directly in to the Python window, just hit <code>Enter</code> after each line. If it's a file, save with <code>Ctrl + S</code> and run with <code>F5</code>. When your code runs, you should see your message on screen in the game.</p>
+<p><img alt="Minecraft Pi with IDLE" src="./tutorial/mcpi-idle.png"></p>
+<h3>Find your location</h3>
+<p>To find your location, type:</p>
+<pre class=" language-python"><code class=" language-python">pos <span class="token operator">=</span> mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>getPos<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<p><code>pos</code> now contains your location; access each part of the set of coordinates with <code>pos.x</code>, <code>pos.y</code> and <code>pos.z</code>.</p>
+<p>Alternatively, a nice way to get the coordinates into separate variables is to use Python's unpacking technique:</p>
+<pre class=" language-python"><code class=" language-python">x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>getPos<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<p>Now <code>x</code>, <code>y</code>, and <code>z</code> contain each part of your position coordinates. <code>x</code> and <code>z</code> are the walking directions (forward/back and left/right) and <code>y</code> is up/down.</p>
+<p>Note that <code>getPos()</code> returns the location of the player at the time, and if you move position you have to call the function again or use the stored location.</p>
+<h3>Teleport</h3>
+<p>As well as finding out your current location you can specify a particular location to teleport to.</p>
+<pre class=" language-python"><code class=" language-python">x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>getPos<span class="token punctuation">(</span><span class="token punctuation">)</span>
+mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>setPos<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token operator">+</span><span class="token number">100</span><span class="token punctuation">,</span> z<span class="token punctuation">)</span></code></pre>
+<p>This will transport your player to 100 spaces in the air. This will mean you'll teleport to the middle of the sky and fall straight back down to where you started.</p>
+<p>Try teleporting to somewhere else!</p>
+<h3>Set block</h3>
+<p>You can set blocks at a given set of coordinates with <code>mc.setBlock()</code>:</p>
+<pre class=" language-python"><code class=" language-python">x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>getPos<span class="token punctuation">(</span><span class="token punctuation">)</span>
+mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span></code></pre>
+<p>Now a stone block should appear beside where you're standing. If it's not immediately in front of you it may be beside or behind you. Return to the Minecraft window and use the mouse to spin around on the spot until you see a grey block directly in front of you.</p>
+<p><img alt="Minecraft setBlock()" src="./tutorial/mcpi-setblock.png"></p>
+<p>The arguments passed the <code>set block</code> are <code>x</code>, <code>y</code>, <code>z</code> and <code>id</code>. The <code>(x, y, z)</code> refers to the position in the world (we specified one block away from where the player is standing with <code>x + 1</code>) and the <code>id</code> refers to the type of block we'd like to place. <code>1</code> is stone.</p>
+<p>Other blocks you can try:</p>
+<pre><code>Air:   0
+Grass: 2
+Dirt:  3</code></pre>
+<p>Now with the block in sight, try changing it to something else:</p>
+<pre class=" language-python"><code class=" language-python">mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span></code></pre>
+<p>You should see the grey stone block change in front of your eyes!</p>
+<p><img alt="Minecraft setBlock()" src="./tutorial/mcpi-setblock2.png"></p>
+<h4>Blocks as variables</h4>
+<p>You can use a variable to store an ID to make the code more readable. The IDs are retrievable through <code>block</code>:</p>
+<pre class=" language-python"><code class=" language-python">dirt <span class="token operator">=</span> block<span class="token punctuation">.</span>DIRT<span class="token punctuation">.</span>id
+mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> dirt<span class="token punctuation">)</span></code></pre>
+<p>Or if you know the ID, you can just set it directly:</p>
+<pre class=" language-python"><code class=" language-python">dirt <span class="token operator">=</span> <span class="token number">3</span>
+mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> dirt<span class="token punctuation">)</span></code></pre>
+<h3>Special blocks</h3>
+<p>There are some blocks which have extra properties, such as Wool which has an extra setting you can specify the colour. To set this use the optional fourth parameter in <code>setBlock</code>:</p>
+<pre class=" language-python"><code class=" language-python">wool <span class="token operator">=</span> <span class="token number">35</span>
+mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> wool<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span></code></pre>
+<p>Here the fourth parameter <code>1</code> sets the wool colour to orange. Without the fourth parameter it is set to the default (<code>0</code>) which is white. Some more colours are:</p>
+<pre><code>2: Magenta
+3: Light Blue
+4: Yellow</code></pre>
+<p>Try some more numbers and watch the block change!</p>
+<p>Other blocks which have extra properties are wood (<code>17</code>): oak, spruce, birch, etc; tall grass (<code>31</code>): shrub, grass, fern; torch (<code>50</code>): pointing east, west, north, south; and more. See the <a href="http://www.stuffaboutcode.com/p/minecraft-api-reference.html">API reference</a> for full details.</p>
+<h3>Set blocks</h3>
+<p>As well as setting a single block with <code>setBlock</code> you can fill in a volume of space in one go with <code>setBlocks</code>:</p>
+<pre class=" language-python"><code class=" language-python">stone <span class="token operator">=</span> <span class="token number">1</span>
+x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>getPos<span class="token punctuation">(</span><span class="token punctuation">)</span>
+mc<span class="token punctuation">.</span>setBlocks<span class="token punctuation">(</span>x<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> z<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> x<span class="token operator">+</span><span class="token number">11</span><span class="token punctuation">,</span> y<span class="token operator">+</span><span class="token number">11</span><span class="token punctuation">,</span> z<span class="token operator">+</span><span class="token number">11</span><span class="token punctuation">,</span> stone<span class="token punctuation">)</span></code></pre>
+<p>This will fill in a 10 x 10 x 10 cube of solid stone.</p>
+<p><img alt="Minecraft setBlocks()" src="./tutorial/mcpi-setblocks.png"></p>
+<p>You can create bigger volumes with the <code>setBlocks</code> function but it may take longer to generate!</p>
+<h3>Dropping blocks as you walk</h3>
+<p>The following code will drop a flower behind you wherever you walk:</p>
+<pre class=" language-python"><code class=" language-python"><span class="token keyword">from</span> mcpi <span class="token keyword">import</span> minecraft
+<span class="token keyword">from</span> time <span class="token keyword">import</span> sleep
+
+mc <span class="token operator">=</span> minecraft<span class="token punctuation">.</span>Minecraft<span class="token punctuation">.</span>create<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+flower <span class="token operator">=</span> <span class="token number">38</span>
+
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>getPos<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> flower<span class="token punctuation">)</span>
+    sleep<span class="token punctuation">(</span><span class="token number">0.1</span><span class="token punctuation">)</span></code></pre>
+<p>Now walk forward for a while and turn around to see the flowers left behind.</p>
+<p><img alt="Minecraft Flowers" src="./tutorial/mcpi-flowers.png"></p>
+<p>Since we used a <code>while True</code> loop this will go on forever. To stop it, hit <code>Ctrl + C</code> in the Python window.</p>
+<p>Try flying through the air and see the flowers you leave in the sky:</p>
+<p><img alt="Minecraft flowers in the sky" src="./tutorial/mcpi-flowers-sky.png"></p>
+<p>What if we only wanted to drop flowers when the player walks on grass? We can use <code>getBlock</code> to find out what type a block is:</p>
+<pre class=" language-python"><code class=" language-python">x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>getPos<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># player position (x, y, z)
+</span>this_block <span class="token operator">=</span> mc<span class="token punctuation">.</span>getBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># block ID
+</span><span class="token keyword">print</span><span class="token punctuation">(</span>this_block<span class="token punctuation">)</span></code></pre>
+<p>This tells you the location of the block you're standing <em>in</em> (this will be <code>0</code> - an air block). We want to know what type of block we're standing <em>on</em>. For this we subtract 1 from the <code>y</code> value and use <code>getBlock()</code> to determine what type of block we're standing on:</p>
+<pre class=" language-python"><code class=" language-python">x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>getpos<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># player position (x, y, z)
+</span>block_beneath <span class="token operator">=</span> mc<span class="token punctuation">.</span>getBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token number">-1</span><span class="token punctuation">,</span> z<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># block ID
+</span><span class="token keyword">print</span><span class="token punctuation">(</span>block_beneath<span class="token punctuation">)</span></code></pre>
+<p>This tells us the ID of the block the player is standing on.</p>
+<p>Test this out by running a loop to print the block ID of whatever you're currently standing on:</p>
+<pre class=" language-python"><code class=" language-python"><span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>getPos<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    block_beneath <span class="token operator">=</span> mc<span class="token punctuation">.</span>getBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token number">-1</span><span class="token punctuation">,</span> z<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>block_beneath<span class="token punctuation">)</span></code></pre>
+<p><img alt="Minecraft IDLE test blocks" src="./tutorial/mcpi-block-test.png"></p>
+<p>We can use an <code>if</code> statement to choose whether or not we plant a flower:</p>
+<pre class=" language-python"><code class=" language-python">grass <span class="token operator">=</span> <span class="token number">2</span>
+flower <span class="token operator">=</span> <span class="token number">38</span>
+
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> mc<span class="token punctuation">.</span>player<span class="token punctuation">.</span>getPos<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># player position (x, y, z)
+</span>    block_beneath <span class="token operator">=</span> mc<span class="token punctuation">.</span>getBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token number">-1</span><span class="token punctuation">,</span> z<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># block ID
+</span>
+    <span class="token keyword">if</span> block_beneath <span class="token operator">==</span> grass<span class="token punctuation">:</span>
+        mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> flower<span class="token punctuation">)</span>
+    sleep<span class="token punctuation">(</span><span class="token number">0.1</span><span class="token punctuation">)</span></code></pre>
+<p>Perhaps next we could turn the tile we're standing on in to grass if it isn't already:</p>
+<pre class=" language-python"><code class=" language-python"><span class="token keyword">if</span> block_beneath <span class="token operator">==</span> grass<span class="token punctuation">:</span>
+    mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> flower<span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token number">-1</span><span class="token punctuation">,</span> z<span class="token punctuation">,</span> grass<span class="token punctuation">)</span></code></pre>
+<p>Now we can walk forward and if we walk on grass, we'll leave a flower behind. If it's not grass, it turns in to grass. Then when we turn around and walk back, we leave a flower behind as it's now grass.</p>
+<p><img alt="Minecraft flowers on grass" src="./tutorial/mcpi-flowers-grass.png"></p>
+<h3>TNT blocks</h3>
+<p>Another interesting block is TNT! To place a normal TNT block use:</p>
+<pre class=" language-python"><code class=" language-python">tnt <span class="token operator">=</span> <span class="token number">46</span>
+mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> tnt<span class="token punctuation">)</span></code></pre>
+<p><img alt="Minecraft TNT" src="./tutorial/mcpi-tnt.png"></p>
+<p>However this TNT block is fairly boring. Try applying <code>data</code> as <code>1</code>:</p>
+<pre class=" language-python"><code class=" language-python">tnt <span class="token operator">=</span> <span class="token number">46</span>
+mc<span class="token punctuation">.</span>setBlock<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> tnt<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span></code></pre>
+<p>Now use your sword and left click the TNT block - it will be activated and will explode in a matter of seconds!</p>
+<p>Now try making a big cube of TNT blocks!</p>
+<pre class=" language-python"><code class=" language-python">tnt <span class="token operator">=</span> <span class="token number">46</span>
+mc<span class="token punctuation">.</span>setBlocks<span class="token punctuation">(</span>x<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> z<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> x<span class="token operator">+</span><span class="token number">11</span><span class="token punctuation">,</span> y<span class="token operator">+</span><span class="token number">11</span><span class="token punctuation">,</span> z<span class="token operator">+</span><span class="token number">11</span><span class="token punctuation">,</span> tnt<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span></code></pre>
+<p><img alt="Minecraft TNT blocks" src="./tutorial/mcpi-tnt-blocks.png"></p>
+<p>Now you'll see a big cube full of TNT blocks. Go and activate one of the blocks and then run away to watch the show! It'll be really slow to render the graphics as so many things are changing at once.</p>
+<p><img alt="Minecraft exploding TNT blocks" src="./tutorial/mcpi-tnt-explode.png"></p>
+<h2>Networked game</h2>
+<p>If multiple people connect Raspberry Pis to a local network they can join the same Minecraft world and play together. Players can see each other in the Minecraft world.</p>
+<h2>API reference</h2>
+<p>For a more extensive documentation of functions and a full list of block IDs see an API reference at <a href="http://www.stuffaboutcode.com/p/minecraft-api-reference.html">stuffaboutcode.com</a>.</p>
+<hr>
+<p>Note: Minecraft was previously installed by downloading the files with <code>wget</code>. These instructions has been updated as the installation is now possible with Raspbian's package manager.</p>
+<p>Previously any Python code accessing the API had to be saved in the <code>api/python</code> folder. Now you can save the Python code wherever you like.</p>
+<p>If you installed Minecraft the old way, you should delete the folder with <code>rm -rf mcpi</code> from the home folder, and follow the instructions above to install the new way.</p>
+</article>
+
+                <footer class="licence">
+                    <aside class="octocat">
+                        <a href="https://github.com/raspberrypi/documentation/blob/master/usage/minecraft/README.md"><img src="./tutorial/octocat.jpg"></a>
+                    </aside>
+                    <aside class="links">
+                        <a href="https://github.com/raspberrypi/documentation/blob/master/usage/minecraft/README.md" class="github">View/Edit this page on GitHub</a><br>
+                        <a href="http://www.raspberrypi.org/creative-commons/">Read our usage and contributions policy</a><br>
+                        <a href="http://www.raspberrypi.org/creative-commons/" class="cc"><img src="./tutorial/88x31.png" alt="Creative Commons License"></a>
+                    </aside>
+                </footer>
+
+                <div style="clear: both;"></div>
+
+            </div>
+
+            <div style="clear: both;"></div>
+
+            <aside id="social-icons" class="footer">
+                <div class="footer-contents">
+                    <ul id="menu-social-icons" class="menu">
+                        <li id="menu-item-6924" class="twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-6924"><a href="https://twitter.com/Raspberry_Pi">@Raspberry_Pi on Twitter</a></li>
+                        <li id="menu-item-6925" class="googleplus menu-item menu-item-type-custom menu-item-object-custom menu-item-6925"><a href="https://plus.google.com/+RaspberryPi">+RaspberryPi on Google+</a></li>
+                        <li id="menu-item-6926" class="facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-6926"><a href="https://www.facebook.com/raspberrypi">Raspberry Pi on Facebook</a></li>
+                        <li id="menu-item-6927" class="github menu-item menu-item-type-custom menu-item-object-custom menu-item-6927"><a href="https://github.com/raspberrypi">Raspberry Pi on GitHub</a></li>
+                        <li id="menu-item-6928" class="githublearning menu-item menu-item-type-custom menu-item-object-custom menu-item-6928"><a href="https://github.com/raspberrypilearning">Raspberry Pi Learning on GitHub</a></li>
+                        <li id="menu-item-6929" class="youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-6929"><a href="https://www.youtube.com/channel/UCFIjVWFZ__KhtTXHDJ7vgng">Raspberry Pi on YouTube</a></li>
+                        <li id="menu-item-6930" class="vimeo menu-item menu-item-type-custom menu-item-object-custom menu-item-6930"><a href="https://vimeo.com/raspberrypi">Raspberry Pi on Vimeo</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+        <footer id="footer">
+            <div class="footer-contents">
+                <aside class="footer-col">
+                    <h3>Take a Byte!</h3>
+                    <ul id="menu-take-a-byte" class="menu">
+                        <li id="menu-item-6875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6875"><a href="http://www.raspberrypi.org/products/">Products</a></li>
+                        <li id="menu-item-6877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6877"><a href="http://www.raspberrypi.org/buy/">Buy a Pi</a></li>
+                        <li id="menu-item-6880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6880"><a href="http://swag.raspberrypi.org/">Buy Swag</a></li>
+                        <li id="menu-item-6881" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6881"><a href="http://swag.raspberrypi.org/collections/software">Buy Codecs</a></li>
+                        <li id="menu-item-6882" class="menu-item menu-item-type-post_type menu-item-object-community menu-item-6882"><a href="http://www.raspberrypi.org/jam/">Raspberry Jam</a></li>
+                        <li id="menu-item-6883" class="menu-item menu-item-type-post_type menu-item-object-community menu-item-6883"><a href="http://www.themagpi.com/">The MagPi</a></li>
+                        <li id="menu-item-6885" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6885"><a href="http://www.raspberrypi.org/documentation/">Documentation</a></li>
+                        <li id="menu-item-6886" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6886"><a href="http://www.raspberrypi.org/documentation/troubleshooting/">Troubleshooting</a></li>
+                    </ul>
+                </aside>
+
+                <aside class="footer-col">
+                    <h3>About Us</h3>
+                    <ul id="menu-about-us" class="menu">
+                        <li id="menu-item-6888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6888"><a href="http://www.raspberrypi.org/about/">About us</a></li>
+                        <li id="menu-item-6891" class="menu-item menu-item-type-post_type menu-item-object-help menu-item-6891"><a href="http://www.raspberrypi.org/help/what-is-a-raspberry-pi/">What is a Raspberry Pi?</a></li>
+                        <li id="menu-item-6892" class="menu-item menu-item-type-post_type menu-item-object-help menu-item-6892"><a href="http://www.raspberrypi.org/help/faqs/">FAQs</a></li>
+                        <li id="menu-item-6893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6893"><a href="http://www.raspberrypi.org/cookies/">Cookies</a></li>
+                        <li id="menu-item-6894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6894"><a href="http://www.raspberrypi.org/picademy/">Picademy</a></li>
+                        <li id="menu-item-6895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6895"><a href="http://www.raspberrypi.org/creative-commons/">Creative Commons</a></li>
+                        <li id="menu-item-6896" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6896"><a href="http://www.raspberrypi.org/trademark-rules/">Trademark rules</a></li>
+                        <li id="menu-item-6898" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6898"><a href="http://www.raspberrypi.org/contact-us/">Contact us</a></li>
+                    </ul>
+                </aside>
+
+                <footer>
+                    Raspberry Pi Foundation<br>
+                    UK registered charity 1129409
+                </footer>
+            </div>
+        </footer>
+    </div>
+
+
+<script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>
